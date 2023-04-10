@@ -25,6 +25,16 @@ and Ritik Chourey (ritikchoureyd90@gmail.com)
 
 **Backend:** MongoDB, Node, Express
 
+##Screenshot 
+
+### Home Page 
+
+![ItchyFeet - Google Chrome 4_11_2023 2_39_31 AM](https://user-images.githubusercontent.com/69351209/230999417-f98d1dca-3643-4826-b6c3-9cda4d23bb20.png)
+![ItchyFeet - Google Chrome 4_11_2023 2_37_32 AM](https://user-images.githubusercontent.com/69351209/230999316-c550025c-b685-4c57-b2b9-75cf8afb0913.png)
+
+### Tours Section
+
+![ItchyFeet - Google Chrome 4_11_2023 2_40_17 AM](https://user-images.githubusercontent.com/69351209/230999581-bad1cbc1-784f-46d0-afe5-55053946ef81.png)
 
 ## Run Locally
 
@@ -73,14 +83,4 @@ Start the server
 ```bash
   node index.js
 
-##Screenshot 
-
-### Home Page 
-
-![ItchyFeet - Google Chrome 4_11_2023 2_39_31 AM](https://user-images.githubusercontent.com/69351209/230999417-f98d1dca-3643-4826-b6c3-9cda4d23bb20.png)
-![ItchyFeet - Google Chrome 4_11_2023 2_37_32 AM](https://user-images.githubusercontent.com/69351209/230999316-c550025c-b685-4c57-b2b9-75cf8afb0913.png)
-
-### Tours Section
-
-![ItchyFeet - Google Chrome 4_11_2023 2_40_17 AM](https://user-images.githubusercontent.com/69351209/230999581-bad1cbc1-784f-46d0-afe5-55053946ef81.png)
 
