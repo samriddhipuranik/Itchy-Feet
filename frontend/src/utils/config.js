@@ -1,1 +1,1 @@
-export const BASE_URL = 'https://itchy-feet.onrender.com/api/v1';
+export const BASE_URL = 'https://itchyfeet.onrender.com/api/v1';
