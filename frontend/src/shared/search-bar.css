@@ -6,6 +6,12 @@
     margin-top: 50px;
     background-color: rgb(97, 222, 143);
 }
+.search__bar input{
+    border-radius: 25px;
+    padding: 2px 3px;
+    margin: 2px;
+}
+
 .form__group span{
    font-size: 1.8rem;
    color: #f6efef; 
