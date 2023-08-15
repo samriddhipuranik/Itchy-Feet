@@ -31,7 +31,7 @@ const Home = () => {
               <img src={worldImg} alt="" />
             </div>
             <h1>Traveling opens the door to creating <span className='highlight'> memories</span> </h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quia quae enim dolorum, modi similique nihil hic magni nemo inventore excepturi, harum impedit? Magni quis perferendis doloribus porro unde at.</p>
+            <p>Each adventure becomes a chapter in our story, etching moments of joy, wonder, and connection into our hearts. Step through that door and immerse yourself in the beauty of exploration.</p>
           </div>
         </Col>
 
