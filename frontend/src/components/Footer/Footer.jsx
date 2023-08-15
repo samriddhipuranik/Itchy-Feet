@@ -44,7 +44,7 @@ const Footer = () => {
           <Col lg="3">
             <div className="logo">
               <img src={logo} alt="logo" />
-              <p>Follow us for the latest updates, travel inspiration, and exciting adventures around the world."</p>
+              <p>Follow us for the latest updates, travel inspiration, and exciting adventures around the world.</p>
               <div className="social__links d-flex align-items-center gap-4">
                 <span>
                   <Link style = {{textDecoration:"none"}} to="#"><i className='ri-youtube-line'></i></Link>
