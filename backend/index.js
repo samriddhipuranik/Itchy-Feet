@@ -16,7 +16,7 @@ const app = express()
 const port = process.env.PORT || 8000;
 
 const corsOptions = {
-    origin: true,
+    origin: ['https://itchyfeet.vercel.app'],
     credentials: true,
     allowedHeaders : ['Content-Type','Authorization'],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
