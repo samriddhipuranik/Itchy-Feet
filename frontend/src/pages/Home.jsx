@@ -90,9 +90,9 @@ const Home = () => {
               <div className="experience__content">
                 <Subtitle subtitle={"Experience"}/>
                 <h2>With our all experience <br /> we will serve you</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                <p>Guided by our extensive experience,
                   <br />
-                  velit esse minus blanditiis magni fugit.
+                   we are committed to delivering unparalleled service tailored to your needs.
                 </p>
               </div>
               <div className="counter__wrapper d-flex align-items-center gap-5">
