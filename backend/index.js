@@ -14,6 +14,20 @@ import bookingRoute from './routes/bookings.js';
 dotenv.config()
 const app = express()
 const port = process.env.PORT || 8000;
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', 'https://itchyfeet.vercel.app'); // Specify the allowed origin
+  res.header('Access-Control-Allow-Credentials', 'true'); // Allow credentials
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization'); // Specify allowed headers
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS'); // Specify allowed HTTP methods
+
+  if (req.method === 'OPTIONS') {
+    // Handle preflight requests
+    res.status(200).end();
+  } else {
+    next();
+  }
+});
+
 const corsOptions = {
     origin: true,
     credentials: true 
