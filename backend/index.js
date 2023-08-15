@@ -14,24 +14,18 @@ import bookingRoute from './routes/bookings.js';
 dotenv.config()
 const app = express()
 const port = process.env.PORT || 8000;
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'https://itchyfeet.vercel.app'); // Specify the allowed origin
-  res.header('Access-Control-Allow-Credentials', 'true'); // Allow credentials
-  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization'); // Specify allowed headers
-  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS'); // Specify allowed HTTP methods
-
-  if (req.method === 'OPTIONS') {
-    // Handle preflight requests
-    res.status(200).end();
-  } else {
-    next();
-  }
-});
 
 const corsOptions = {
     origin: true,
-    credentials: true 
+    credentials: true,
+    allowedHeaders : ['Content-Type','Authorization'],
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
 }
+
+// const corsOptions = {
+//     origin: true,
+//     credentials: true 
+// }
 // connect to db
 mongoose.set("strictQuery", false);
 const connect = async () => {
@@ -48,8 +42,8 @@ const connect = async () => {
 
 
 // middleware
-app.use(express.json())
-//app.use(cors())
+app.use(express.json());
+app.use(cors(corsOptions));
 app.use(cookieParser());
 app.use('/api/v1/auth', authRoute);
 app.use('/api/v1/tours', tourRoute);
